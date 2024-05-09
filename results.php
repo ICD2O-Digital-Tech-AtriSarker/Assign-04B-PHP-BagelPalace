@@ -1,9 +1,3 @@
-
-<!-- Result -->
-  <iframe name="resultFrame" src="./results.php">
-  </iframe>
-<!-- <form id="inputForm" method="post" action="results.php" target="resultFrame"> -->
-
 <b>
   <?php
     // Code

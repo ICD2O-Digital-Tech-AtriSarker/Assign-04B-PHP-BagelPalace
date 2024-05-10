@@ -17,6 +17,8 @@ let toppingDivOriginal = document.getElementById('toppingTemplate');
 const toppingDivTemplate = toppingDivOriginal.cloneNode(true);
 // Remove the original template from the webpage
 toppingDivOriginal.remove();
+// Make toppingsDiv empty
+toppingsDiv.innerHTML = '';
 
 // Helper Function to get child from a parent
 // Returns the first child that matches the elementType
@@ -62,8 +64,9 @@ function addTopping(toppingName, pos = "default") {
   // Set the selected value to the provided topping
   dropdownList.value = toppingName;
   // Set the id to include the position of the topping
-  // redundant since I scrapped the drag and drop feature
+  // this is used for the PHP version of the website
   dropdownList.id = `topping${pos}`
+  dropdownList.name = `topping${pos}`
 
   // Connect dropwdown value change to the drawSandwich function 
   // located at [bottom of the script file]
@@ -97,8 +100,8 @@ amountOfToppingsInput.oninput = () => {
   // Current list of children of the toppings container
   let current = toppingsContainer.childNodes;
 
-  // Current amount of topping dropdowns, substracted by 2 to account for the 2 non-dropdown children inside the toppings container
-  let currentAmount = current.length - 2;
+  // Current amount of topping dropdowns
+  let currentAmount = current.length;
 
   if (currentAmount == amount) {
     // If input is equal to the current amount, do nothing
@@ -138,7 +141,7 @@ const sandwichDisplay = document.getElementById('sandwichDisplay');
 const render = sandwichDisplay.getContext('2d');
 
 // FILEPATH FOR TOPPING IMAGES
-const imagePath = './.././images/toppings/';
+const imagePath = './images/toppings/';
 
 // function that gets image using filepath and name/value
 function image(toppingName) {

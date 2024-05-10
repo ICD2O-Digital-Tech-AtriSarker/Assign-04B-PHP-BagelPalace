@@ -71,7 +71,7 @@
       <!-- Input for amount of toppings -->
       <!-- Automatically creates topping dropwdowns based on the input -->
       <label>Enter Amount Of Toppings (99 Max):</label>
-      <input id="amountOfToppings" type="number" min="0" step="1" max="99" value="3">
+      <input id="amountOfToppings" name="amountOfToppings" type="number" min="0" step="1" max="99" value="3">
 
       <!-- Table for Layout, dropdowns on left side; sandwich display on right side -->
       <table><tr>
@@ -157,7 +157,7 @@
       <br>
 
       <!-- Results Button -->
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="submit" id="resultBtn">Get Result!</button>
+      <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" name="submit" value="Get Result!" id="resultBtn">
 
 
   </form>

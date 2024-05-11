@@ -99,7 +99,7 @@
             </optgroup>
             <optgroup label="Sauces and Dressings">
               <option value="ketchup">Ketchup 🍅</option>
-              <option value="mayo">Mayonaise 🥪</option>
+              <option value="mayo">Mayonnaise 🥪</option>
               <option value="mustard">Mustard 🌭</option>
               <option value="bbq">Barbeque Sauce 🔥</option>
               <option value="ranch">Ranch 🥗</option>

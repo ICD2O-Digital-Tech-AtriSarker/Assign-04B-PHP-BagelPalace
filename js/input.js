@@ -243,6 +243,8 @@ function drawSandwich() {
 addTopping('sausage-patty');
 addTopping('cheese');
 addTopping('egg');
+// Set the amount of toppings to 3
+amountOfToppingsInput.value = 3;
 
 // Initial Draw for the default sandwich
 drawSandwich();

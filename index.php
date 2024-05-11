@@ -69,7 +69,7 @@
       <!-- Header for Topping selection -->
       <h3>Toppings</h3>
       <!-- Input for amount of toppings -->
-      <!-- Automatically creates topping dropwdowns based on the input -->
+      <!-- Automatically creates topping dropdowns based on the input -->
       <label>Enter Amount Of Toppings (99 Max):</label>
       <input id="amountOfToppings" name="amountOfToppings" type="number" min="0" step="1" max="99" value="3">
 

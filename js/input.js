@@ -1,7 +1,7 @@
 /*
 * Created by: Atri Sarker
 * Created on: May, 2024
-* Description: This file contains the input.js for the Burger Palace website. This script is in charge of managing the topping dropwdowns and the sandwich display.
+* Description: This file contains the input.js for the Burger Palace website. This script is in charge of managing the topping dropdowns and the sandwich display.
 */
 'use strict'; // Strict mode
 
@@ -41,7 +41,7 @@ function newTopping() {
   return toppingDivTemplate.cloneNode(true);
 }
 
-// Function that adds a topping dropdown to the topping drowpdown container div
+// Function that adds a topping dropdown to the topping dropdown container div
 function addTopping(toppingName, pos = "default") {
 
   // Default parameter, position gets set at the end of the dropdowns

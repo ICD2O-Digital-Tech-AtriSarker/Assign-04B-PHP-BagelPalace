@@ -6,7 +6,7 @@
 
 <!-- PHP CODE -->
 <?php
-  // Helper functions
+  // Helper function, .toFixed(2) but for php
   function fnum($number) {
     return number_format($number, 2, '.', "");
   }

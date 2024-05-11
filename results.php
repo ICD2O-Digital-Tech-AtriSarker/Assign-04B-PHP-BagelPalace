@@ -46,13 +46,13 @@
       "bbq" => 0.10,
       "ranch" => 0.10
     ];
-    // Size Names, for reciept charges
+    // Size Names, for receipt charges
     $sizeNames = [
       "small" => "Small Size",
       "medium" => "Medium Size",
       "large" => "Large Size"
     ];
-    // Toppings Names, for reciept charges
+    // Toppings Names, for receipt charges
     $toppingNames = [
       "sausage-patty" => "Sausage Patty 🍖",
       "vegetable-patty" => "Vegetable Patty 🥦",
@@ -81,7 +81,7 @@
     $size = $_POST['size'];
     // Get Size Cost
     $sizeCost = $sizeCosts[$size];
-    // Add Size Cost charge to reciept
+    // Add Size Cost charge to receipt
     echo "+$" . fnum($sizeCost) . " [". $sizeNames[$size] ."]<br>";
 
     // Get Topping dropdown Amount
@@ -112,13 +112,13 @@
       // Add it to the total topping cost sum
       $summedToppingsCost += $toppingCostTotal;
 
-      // add charge to reciept
+      // add charge to receipt
       echo "+$" . fnum($toppingCostTotal) . " [". $toppingNames[$topping] . " x" . $toppingAmount . "]<br>";
     };
 
     // Get Topping Premium [30% extra cost for large]
     $toppingPremium = $summedToppingsCost * $toppingsValue[$size];
-    // Add the charge to the reciept
+    // Add the charge to the receipt
     echo "+$" . fnum($toppingPremium) . " [". $sizeNames[$size] . " Toppings additional cost]<br>";
 
     // Initialize variable to store summed cost for side-orders and drinks
@@ -126,7 +126,7 @@
 
     // Go through each side-order and drink
     // If ordered, add the total cost (amount*cost) to the summed cost
-    // also, add the charge to the reciept
+    // also, add the charge to the receipt
     
     // Onion Rings
     $onionRingsAmount = $_POST["onionRingsAmount"];
@@ -165,7 +165,7 @@
     $tax = $subtotal * HST;
     $total = $subtotal + $tax;
 
-    // Add subtotal, tax, and total to the reciept
+    // Add subtotal, tax, and total to the receipt
     echo "<b>Subtotal: $" . fnum($subtotal) . "</b><br>";
     echo "<b>Tax: $" . fnum($tax) ."</b><br>";
     echo "<b>Total: $" . fnum($total) . "</b><br>";

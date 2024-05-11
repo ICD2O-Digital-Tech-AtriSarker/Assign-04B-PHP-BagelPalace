@@ -129,13 +129,13 @@ select {
   margin: 2px 0px 2px 8px;
 }
 
-/* Result|reciept container */
+/* Result|receipt container */
 #resultDiv {
   background-color: rgba(255, 255, 255, 0.01);
   margin: 8px;
 }
 
-/* Bolded text within reciept is bigger and in red */
+/* Bolded text within receipt is bigger and in red */
 /* For subtotal, tax, and total */
 #resultDiv b {
   color: #cd3232;
